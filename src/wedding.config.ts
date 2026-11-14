@@ -64,7 +64,7 @@ export const wedding = {
   // ---------- Families ----------
   families: {
     sectionIntro: "With blessings from",
-    // Add or remove family cards the same way as events.
+    image: "/images/Background.jpg.HEIC", cards the same way as events.
     groups: [
       {
         title: "Groom's Parents",
