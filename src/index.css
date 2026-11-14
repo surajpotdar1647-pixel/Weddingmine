@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 45 20% 98%;
+    --foreground: 280 60% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 60% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 60% 15%;
+
+    --primary: 280 65% 45%;
+    --primary-foreground: 45 100% 98%;
+
+    --secondary: 45 90% 55%;
+    --secondary-foreground: 280 60% 15%;
+
+    --muted: 45 40% 92%;
+    --muted-foreground: 280 30% 45%;
+
+    --accent: 340 75% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 280 30% 90%;
+    --input: 280 30% 90%;
+    --ring: 280 65% 45%;
+
+    --radius: 1rem;
+
+    /* Wedding specific colors */
+    --wedding-purple: 280 65% 45%;
+    --wedding-gold: 45 90% 55%;
+    --wedding-rose: 340 75% 55%;
+    --wedding-cream: 45 40% 95%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 65% 45%) 0%, hsl(340 75% 55%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(35 95% 50%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(280 65% 45% / 0.05) 0%, hsla(45 90% 55% / 0.05) 100%);
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(280 65% 45% / 0.2);
+    --shadow-glow: 0 0 30px hsl(45 90% 55% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 280 40% 8%;
+    --foreground: 45 100% 95%;
+
+    --card: 280 35% 12%;
+    --card-foreground: 45 100% 95%;
+
+    --popover: 280 35% 12%;
+    --popover-foreground: 45 100% 95%;
+
+    --primary: 280 65% 60%;
+    --primary-foreground: 280 60% 10%;
+
+    --secondary: 45 90% 65%;
+    --secondary-foreground: 280 60% 10%;
+
+    --muted: 280 30% 20%;
+    --muted-foreground: 45 40% 70%;
+
+    --accent: 340 75% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 280 30% 20%;
+    --input: 280 30% 20%;
+    --ring: 280 65% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-[hsl(45,90%,55%)] to-[hsl(35,95%,50%)] bg-clip-text text-transparent;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-[hsl(280,65%,45%)] to-[hsl(340,75%,55%)] bg-clip-text text-transparent;
+  }
+}
