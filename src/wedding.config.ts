@@ -129,11 +129,4 @@ export const wedding = {
   },
 };
 
-export type WeddingConfig = typeof wedding;
-```
-
-
-- **Photos:** I used `/images/haldi.jpg`, `/images/wedding.jpg` and `/images/background.jpg`. Make sure those files exist in `public/images`, with exactly those names.
-- **Name spellings:** I corrected "Mabavir" to "Mahavir" and fixed the typos in "Wedding". Please check the spelling of every name.
-- **Hidden items:** The quote, siblings and elders box are hidden because you said "none".
-- **Music, footer and share image:** I kept the sample music file and share image, so add your own files or change those paths. I used your Ganapati blessing as the footer line.
+export type WeddingConfig = typeof wedding}.
