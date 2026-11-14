@@ -57,7 +57,7 @@ export const wedding = {
       name: "Wedding",
       time: "1 January 2027",
       description: "The sacred ceremony of joining hands",
-      image: "/images/wedding.jpg",
+      image: "/images/First.JPG",
     },
   ],
 
