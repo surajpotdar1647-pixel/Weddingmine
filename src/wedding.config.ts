@@ -51,13 +51,13 @@ export const wedding = {
       name: "Haldi",
       time: "31 December 2026",
       description: "A joyful ceremony of turmeric, music and blessings",
-      image: "/images/Haldi.jpeg.HEIC",
+      image: "/images/Second.HEIC",
     },
     {
       name: "Wedding",
       time: "1 January 2027",
       description: "The sacred ceremony of joining hands",
-      image: "/images/First.JPG",
+      image: "/images/Third.JPG",
     },
   ],
 
