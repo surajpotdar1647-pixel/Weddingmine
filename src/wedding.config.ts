@@ -36,7 +36,7 @@ export const wedding = {
     quote: "",
     // Background video (MP4, under 5 MB is best). Use "" to show the image below instead.
     video: "",
-    // Background image, used when there is no video.
+    // Background image
     image: "/images/public/images/First.JPG",
   },
 
@@ -64,8 +64,8 @@ export const wedding = {
   // ---------- Families ----------
   families: {
     sectionIntro: "With blessings from",
-    image: "/images/Background.jpg.HEIC", cards the same way as events.
-    groups: [
+    image: "/images/Background.jpg.HEIC",
+    
       {
         title: "Groom's Parents",
         names: "Mrs. Mangala & Mr. Jagdish Potdar",
