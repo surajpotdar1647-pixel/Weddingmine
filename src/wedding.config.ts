@@ -37,7 +37,7 @@ export const wedding = {
     // Background video (MP4, under 5 MB is best). Use "" to show the image below instead.
     video: "",
     // Background image, used when there is no video.
-    image: "/images/public/images/background.jpeg.heic",
+    image: "/images/public/images/Background.jpg.HEIC",
   },
 
   // ---------- Logo (top left corner) ----------
@@ -51,7 +51,7 @@ export const wedding = {
       name: "Haldi",
       time: "31 December 2026",
       description: "A joyful ceremony of turmeric, music and blessings",
-      image: "/images/haldi.jpg",
+      image: "/images/Haldi.jpeg.HEIC",
     },
     {
       name: "Wedding",
