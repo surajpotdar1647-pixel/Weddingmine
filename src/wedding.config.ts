@@ -117,16 +117,16 @@ export const wedding = {
     welcomeTitle: "Welcome to Suraj & Kanchan's Wedding",
     welcomeMessage: "Step into our world of love, laughter, and forever.",
     welcomeButton: "Enter the Celebration",
-  },
+
 
   // ---------- Link preview (WhatsApp, iMessage, social media) ----------
-  share: {
-    title: "Suraj & Kanchan | Wedding Celebration",
-    description:
-      "Join us in celebrating the wedding of Suraj & Kanchan on January 1, 2027 in Nagpur.",
+  //share: {
+    //title: "Suraj & Kanchan | Wedding Celebration",
+    //description:
+     // "Join us in celebrating the wedding of Suraj & Kanchan on January 1, 2027 in Nagpur.",
     // Image shown in the link preview. A 1200 x 630 JPG works best.
-    image: "/images/share-preview.jpg",
-  },
-};
+    //image: "/images/share-preview.jpg",
+  
 
-export type WeddingConfig = typeof wedding}.
+//export type WeddingConfig = typeof wedding}.
+//}.
