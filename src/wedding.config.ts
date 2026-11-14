@@ -37,7 +37,7 @@ export const wedding = {
     // Background video (MP4, under 5 MB is best). Use "" to show the image below instead.
     video: "",
     // Background image, used when there is no video.
-    image: "/images/background.jpg",
+    image: "/images/public/images/IMG_1487.jpeg",
   },
 
   // ---------- Logo (top left corner) ----------
