@@ -132,8 +132,6 @@ export const wedding = {
 export type WeddingConfig = typeof wedding;
 ```
 
-A few things I decided for you:
-
 - **Event times:** You didn't give clock times, so I put the dates in the `time` field. Replace them with times (like "10:00 AM") if you like.
 - **Photos:** I used `/images/haldi.jpg`, `/images/wedding.jpg` and `/images/background.jpg`. Make sure those files exist in `public/images`, with exactly those names.
 - **Name spellings:** I corrected "Mabavir" to "Mahavir" and fixed the typos in "Wedding". Please check the spelling of every name.
