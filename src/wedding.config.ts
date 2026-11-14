@@ -1,3 +1,4 @@
+```ts
 /**
  * ============================================================
  *  YOUR WEDDING DETAILS
@@ -18,27 +19,26 @@
 export const wedding = {
   // ---------- The couple ----------
   couple: {
-    partner1: "Aarav",
-    partner2: "Diya",
+    partner1: "Suraj",
+    partner2: "Kanchan",
   },
 
   // ---------- Date ----------
   // Short date shown on the big welcome screen and in the footer.
-  date: "December 12, 2026",
+  date: "January 1, 2027",
   // Full date shown above the timeline.
-  dateWithDay: "Saturday, December 12, 2026",
+  dateWithDay: "Friday, January 1, 2027",
 
   // ---------- Welcome screen (top of the page) ----------
   hero: {
     // A small blessing or greeting shown above your names. Use "" to hide it.
-    blessing: "Shree Ganeshaya Namah",
+    blessing: "Ganapati Bappa Morya",
     // A short quote shown below the date. Use "" to hide it.
-    quote:
-      "As our love has brought a new meaning to our life, so will our marriage bring a new meaning to love",
+    quote: "",
     // Background video (MP4, under 5 MB is best). Use "" to show the image below instead.
     video: "",
     // Background image, used when there is no video.
-    image: "/images/hero.svg",
+    image: "/images/background.jpg",
   },
 
   // ---------- Logo (top left corner) ----------
@@ -49,22 +49,16 @@ export const wedding = {
   // Add or remove events by copying or deleting a whole { ... } block.
   events: [
     {
-      name: "Baraat",
-      time: "9:30 AM",
-      description: "The groom arrives with family and friends",
-      image: "/images/event-1.svg",
+      name: "Haldi",
+      time: "31 December 2026",
+      description: "A joyful ceremony of turmeric, music and blessings",
+      image: "/images/haldi.jpg",
     },
     {
-      name: "Wedding Ceremony",
-      time: "12:30 PM",
+      name: "Wedding",
+      time: "1 January 2027",
       description: "The sacred ceremony of joining hands",
-      image: "/images/event-2.svg",
-    },
-    {
-      name: "Lunch",
-      time: "1:00 PM Onwards",
-      description: "A celebratory feast for all our guests",
-      image: "/images/event-3.svg",
+      image: "/images/wedding.jpg",
     },
   ],
 
@@ -75,15 +69,15 @@ export const wedding = {
     groups: [
       {
         title: "Groom's Parents",
-        names: "Mrs. Kavita & Mr. Suresh Sharma",
+        names: "Mrs. Mangala & Mr. Jagdish Potdar",
         message: "request the pleasure of your company",
         // Optional extra line inside the card, such as siblings. Use "" for both to hide it.
-        extraTitle: "Groom's Brother",
-        extraNames: "Kabir Sharma",
+        extraTitle: "",
+        extraNames: "",
       },
       {
         title: "Bride's Parents",
-        names: "Mrs. Anjali & Mr. Rakesh Mehta",
+        names: "Mrs. Sangeeta & Mr. Mahavir Khangare",
         message: "bless this sacred union",
         extraTitle: "",
         extraNames: "",
@@ -92,25 +86,25 @@ export const wedding = {
     // Optional tribute to elders, with a photo. Set "names" to [] to hide this box.
     elders: {
       heading: "With eternal blessings from",
-      names: ["Late Shri Mohan Sharma", "Late Smt. Leela Sharma"],
-      photo: "/images/elders.svg",
+      names: [],
+      photo: "",
     },
   },
 
   // ---------- Venue ----------
   venue: {
-    name: "The Grand Celebration Hall",
-    addressLine1: "Hall No. 2, Ground Floor",
-    addressLine2: "Connaught Place, New Delhi",
+    name: "Gangotri Resort",
+    addressLine1: "Gangotri Resort",
+    addressLine2: "Nagpur",
     // What to search on Google Maps to find the venue.
     // Tip: copy the exact venue name and city from Google Maps.
-    mapSearch: "Connaught Place, New Delhi",
+    mapSearch: "Gangotri Resort, Nagpur",
   },
 
   // ---------- Footer (bottom of the page) ----------
   footer: {
     // Short line under the address. Use "" to hide it.
-    blessingLine: "Om Shree Ganeshaya Namah",
+    blessingLine: "Ganapati Bappa Morya",
   },
 
   // ---------- Background music ----------
@@ -120,19 +114,28 @@ export const wedding = {
     // Volume from 0 (silent) to 1 (full).
     volume: 0.3,
     // Android phones block music until the guest taps. This welcome box asks them to tap.
-    welcomeTitle: "Welcome to Aarav & Diya's Wedding",
+    welcomeTitle: "Welcome to Suraj & Kanchan's Wedding",
     welcomeMessage: "Step into our world of love, laughter, and forever.",
     welcomeButton: "Enter the Celebration",
   },
 
   // ---------- Link preview (WhatsApp, iMessage, social media) ----------
   share: {
-    title: "Aarav & Diya | Wedding Celebration",
+    title: "Suraj & Kanchan | Wedding Celebration",
     description:
-      "Join us in celebrating the wedding of Aarav & Diya on December 12, 2026 in New Delhi.",
+      "Join us in celebrating the wedding of Suraj & Kanchan on January 1, 2027 in Nagpur.",
     // Image shown in the link preview. A 1200 x 630 JPG works best.
     image: "/images/share-preview.jpg",
   },
 };
 
 export type WeddingConfig = typeof wedding;
+```
+
+A few things I decided for you:
+
+- **Event times:** You didn't give clock times, so I put the dates in the `time` field. Replace them with times (like "10:00 AM") if you like.
+- **Photos:** I used `/images/haldi.jpg`, `/images/wedding.jpg` and `/images/background.jpg`. Make sure those files exist in `public/images`, with exactly those names.
+- **Name spellings:** I corrected "Mabavir" to "Mahavir" and fixed the typos in "Wedding". Please check the spelling of every name.
+- **Hidden items:** The quote, siblings and elders box are hidden because you said "none".
+- **Music, footer and share image:** I kept the sample music file and share image, so add your own files or change those paths. I used your Ganapati blessing as the footer line.
